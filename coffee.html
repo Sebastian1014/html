@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #gnav > ul {
+            display: table;
+            padding-left: 50px;
+        }
+        #gnav > ul > li {
+            display: table-cell;
+            margin-right: 2em;
+        }
+        #gnav > ul > li:hover {
+            color: #fff;
+            background-color: #19192b;
+        }
+        #gnav > ul > li:hover > a {
+            color: #fff;
+        }
+        #gnav > ul > li:hover .menu {
+            max-height: 9999px;
+            opacity: 1;
+        }
+        #gnav > ul > li > a {
+            display: block;
+            padding: 25.5px 1em 15.5px;
+            transition: all .2s ease-in;
+        }
+        #gnav > ul .menu {
+            transition: all .2s ease-in;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            position: absolute;
+            background-color: #19192b;
+        }
+        #gnav > ul .menu .menu_inner {
+            padding: 1em 0;
+        }
+        #gnav > ul .menu .menu_inner li {
+            display: inline-block;
+            margin: 0 .5em;
+        }
+        #gnav > ul .menu a {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<nav id="gnav">
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li class="toggle">
+            <a href="">ABOUT</a>
+            <div class="menu">
+                <ul class="menu_inner">
+                    <li><a href="">ABOUT SUB 01</a></li>
+                    <li><a href="">ABOUT SUB 02</a></li>
+                    <li><a href="">ABOUT SUB 03</a></li>
+                </ul>
+                <ul class="menu_inner">
+                    <li><a href="">ABOUT SUB 04</a></li>
+                    <li><a href="">ABOUT SUB 05</a></li>
+                    <li><a href="">ABOUT SUB 06</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="">NEWS</a></li>
+        <li class="toggle">
+            <a href="">COMPANY</a>
+            <div class="menu">
+                <ul class="menu_inner">
+                    <li><a href="">COMPANY SUB 01</a></li>
+                    <li><a href="">COMPANY SUB 02</a></li>
+                    <li><a href="">COMPANY SUB 03</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="https://shopblog.onward.co.jp/brand/jpress-men" target="_blank">BLOG</a></li>
+    </ul>
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

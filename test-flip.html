@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cube{
+            height: 300px;
+            width: 400px;
+            background: #0c92d1;
+        }
+        .default-state,active-state{
+            height: 300px;
+            width: 400px;
+            position: relative;
+        }
+
+        @keyframes my-animate-enter {
+            from {top: 0px;}
+            to {top:-300px}
+        }
+
+        @keyframes my-animate-ente {
+            from {top: -300px;}
+            to {top:0px}
+        }
+    </style>
+</head>
+<body>
+<div class="cube"></div>
+<div class="cube ">
+    <div class="default-state" style="overflow: hidden;">
+        <img src="icon/icon_bjgg@3x.png" alt="" style="width: 100%;height: 100%;">
+    </div>
+    <div class="active-state">
+        <img src="icon/icon_bjgg@3x.png" alt="" style="width: 100%;height: 100%;">
+    </div>
+</div>
+
+</body>
+<script src="bengary/jquery/jquery.js"></script>
+<script>
+
+    $('.default-state').mouseenter(
+        function () {
+            // alert("a");
+            $('.default-state').css("animation","my-animate-enter 1s d");
+            // $('.active-state').css("animation","my-animate 1s");
+        }
+    )
+    // $('.default-state').mouseleave(
+    //     function () {
+    //         // alert("a");
+    //         $('.default-state').css("animation","my-animate-leave 1s");
+    //         // $('.active-state').css("animation","my-animate 1s");
+    //     }
+    // )
+</script>
+</html>

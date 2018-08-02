@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <style>
+        div {
+            border: #FFCCCC solid 1px;
+        }
+    </style>
+</head>
+<body>
+<div class="ui right aligned segment">Right</div>
+<div class="ui left aligned segment">Left</div>
+<div class="ui center aligned segment">居中</div>
+<div class="ui left aligned container">
+    <p>Left</p>
+</div>
+<div class="ui center aligned container">
+    <p>居中</p>
+</div>
+<div class="ui right aligned container">
+    <p>Right</p>
+</div>
+<div class="ui justified container">
+    <p>居中居中居中居中居中</p>
+</div>
+
+<div class="ui container center aligned">
+    <div class="column center aligned segment"><p class="center">1</p></div>
+    <div class="column center aligned"><p class="center">1</p></div>
+    <div class="column center aligned"><p class="center">1</p></div>
+    <div class="column"><p class="center">1</p></div>
+    <div class="column">5</div>
+    <div class="column">6</div>
+    <div class="column">7</div>
+    <div class="column">8</div>
+    <div class="column">9</div>
+    <div class="column">10</div>
+    <div class="column">11</div>
+    <div class="column">12</div>
+    <div class="column">13</div>
+    <div class="column center aligned">14</div>
+    <div class="column">15</div>
+    <div class="column">16</div>
+</div>
+<div class="ui three column divided grid">
+    <div class="row">
+        <div class="column">
+            <p>1</p>
+        </div>
+        <div class="column">
+            <p>2</p>
+        </div>
+        <div class="column">
+            <p>3</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>4</p>
+        </div>
+        <div class="column">
+            <p>5</p>
+        </div>
+        <div class="column">
+            <p>6</p>
+        </div>
+    </div>
+</div>
+<div class="ui vertically divided grid">
+    <div class="two column row">
+        <div class="column">
+            <p>1</p>
+        </div>
+        <div class="column">
+            <p>2</p>
+        </div>
+    </div>
+    <div class="three column row">
+        <div class="column">
+            <p>3</p>
+        </div>
+        <div class="column">
+            <p>4</p>
+        </div>
+        <div class="column">
+            <p>5</p>
+        </div>
+    </div>
+</div>
+<div class="ui grid">
+    <div class="left floated five wide column">
+        <p>1</p>
+    </div>
+    <div class="right floated five wide column">
+        <p>1\2</p>
+    </div>
+</div>
+<div class="ui grid">
+    <div class="six wide column">
+        6
+    </div>
+    <div class="ten wide column">10</div>
+</div>
+<div class="ui four column doubling stackable grid container">
+    <div class="column">
+        <p>1</p>
+        <p>2</p>
+    </div>
+    <div class="column">
+        <p>3</p>
+        <p>4</p>
+    </div>
+    <div class="column">
+        <p>5</p>
+        <p>6</p>
+    </div>
+    <div class="column">
+        <p>7</p>
+        <p>8</p>
+    </div>
+</div>
+<h1 class="ui header">H1</h1>
+<h2 class="ui header">H2</h2>
+<h3 class="ui header">H3</h3>
+<h4 class="ui header">H4</h4>
+<h5 class="ui header">H5</h5>
+<div class="ui sizer vertical segment">
+    <div class="ui huge header">巨型标题</div>
+    <p>dmsooifdnsofojfodsdmsooifdnsofojfodsdmsooifdnsofojfodsdmsooifdnsofojfodsdmsooifdnsofojfods</p>
+    <div class="ui large header">大型标题</div>
+    <p>dmsooifdnsofojfodsdmsooifdnsofojfodsdmsooifdnsofojfodsdmsooifdnsofojfods</p>
+    <div class="ui medium header">中型标题</div>
+    <p>dmsooifdnsofojfodsdmsooifdnsofojfods</p>
+    <div class="ui small header">小型标题</div>
+    <p>dmsooifdnsofojfodsdmsooifdnsofojfodsdmsooifdnsofojfods</p>
+    <div class="ui tiny header">超小标题</div>
+    <p>dmsooifdnsofojfodsdmsooifdnsofojfodsdmsooifdnsofojfods</p>
+</div>
+<h2 class="ui icon header">
+    <i class="settings icon"></i>
+    <div class="content">账户设置
+        <div class="sub header">管理你的账户设置并设置邮箱</div>
+    </div>
+</h2>
+<div class="ui segment">
+    <h3 class="ui right aligned header">Right </h3>
+    <h3 class="ui left aligned header">Left </h3>
+    <h3 class="ui justified header">即使只有一行，也会占ddddd满ddddd整个宽度 </h3>
+    <h3 class="ui center aligned header">居中 </h3>
+</div>
+<h2 class="ui center aligned icon header"><i class="circular users icon"></i> Friends </h2>
+<div class="ui attached stackable menu">
+    <div class="ui container">
+        <a class="item">
+            <i class="home icon"></i> Home
+        </a>
+        <a class="item">
+            <i class="grid layout icon"></i> Browse
+        </a>
+        <a class="item">
+            <i class="mail icon"></i> Messages
+        </a>
+        <div class="ui simple dropdown item">
+            More
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item"><i class="edit icon"></i> Edit Profile</a>
+                <a class="item"><i class="globe icon"></i> Choose Language</a>
+                <a class="item"><i class="settings icon"></i> Account Settings</a>
+            </div>
+        </div>
+        <div class="right item">
+            <div class="ui input"><input type="text" placeholder="Search..."></div>
+        </div>
+    </div>
+</div>
+<div class="ui styled accordion">
+    <div class="title">
+        <i class="dropdown icon"></i>
+        什么是狗？
+    </div>
+    <div class="content">
+        <p class="transition hidden">狗算是一种家畜。以其忠诚与忠心广受人类欢迎, 可以在世界各地的许多家庭里发现这个受欢迎的客人。</p>
+    </div>
+    <div class="title">
+        <i class="dropdown icon"></i>
+        狗有哪些种类？
+    </div>
+    <div class="content">
+        <p class="transition hidden">狗有许多品种，每个品种都有不同的大小及性格，饲主通常选择适合自己生活方式的品种当作自已的伙伴，其中最受欢迎的品种绝对是吉娃娃。</p>
+    </div>
+    <div class="title active">
+        <i class="dropdown icon"></i>
+        如何获得一只狗?
+    </div>
+    <div class="content active">
+        <p class="transition visible">通常有三种方式可以取得一只狗狗，宠物店、私人饲主或是动物之家。 (请以领养代替购买)</p>
+        <p class="transition visible">你可以在动物之家内领养一只健康的小狗，比起在宠物店买，收容所中的宠物比较不容易有近亲交配出现的缺陷问题，而且领养一只小狗的费用远比你在宠物店中购买便宜得多。</p>
+    </div>
+</div>
+<div class="ui breadcrumb">
+    <a class="section">Home</a>
+    <div class="divider"> /</div>
+    <a class="section">Store</a>
+    <div class="divider"> /</div>
+    <div class="active section">T-Shirt</div>
+</div>
+<div class="ui top attached tabular menu">
+    <a class="item active" data-tab="first">First</a>
+    <a class="item" data-tab="second">Second</a>
+    <a class="item" data-tab="third">Third</a>
+</div>
+<div class="ui bottom attached tab segment active" data-tab="first">First</div>
+<div class="ui bottom attached tab segment" data-tab="second">Second</div>
+<div class="ui bottom attached tab segment" data-tab="third">Third</div>
+
+<img class="ui mini rounded image" src="image/zm_1a.jpg">
+<img class="ui top aligned Massive image" src="image/zm_1a.jpg">
+<span>Top Aligned</span>
+<div class="ui divider"></div>
+<img class="ui middle aligned Huge image" src="image/zm_2a.jpg">
+<span>Middle Aligned</span>
+<div class="ui divider"></div>
+<img class="ui bottom aligned tiny image" src="image/zm_3a.jpg">
+<span>Bottom Aligned</span>
+
+<div class="ui segment">
+    <p>Te eum doming eirmod, nominati pertinacia <img class="ui Massive spaced image" src="image/zm_3a.jpg"> argumentum
+        ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei
+        appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an.
+        Mei ex natum rebum iisque.</p>
+</div>
+<div class="ui middle aligned animated list">
+    <div class="item">
+        <img class="ui avatar image" src="image/zm_1a.jpg">
+        <div class="content">
+            <div class="header">海伦</div>
+        </div>
+    </div>
+    <div class="item">
+        <img class="ui avatar image" src="image/zm_1a.jpg">
+        <div class="content">
+            <div class="header">Christian</div>
+        </div>
+    </div>
+    <div class="item">
+        <img class="ui avatar image" src="image/zm_1a.jpg">
+        <div class="content">
+            <div class="header">丹尼尔</div>
+        </div>
+    </div>
+</div>
+<button class="mini ui button">
+    Mini
+</button>
+<button class="tiny ui button">
+    Tiny
+</button>
+<button class="small ui button">
+    Small
+</button>
+<button class="medium ui button">
+    Medium
+</button>
+<button class="large ui button">
+    Large
+</button>
+<button class="big ui button">
+    Big
+</button>
+<button class="huge ui button">
+    Huge
+</button>
+<button class="massive ui button">
+    Massive
+</button>
+</body>
+
+<script src="dist/jquery/jquery-3.3.1.slim.min.js"></script>
+<script src="dist/jquery/jquery-3.3.1.min.js"></script>
+<script src="semantic/semantic.min.js"></script>
+<script>
+    $(function () {
+        $('.menu .item')
+            .tab()
+    })
+    ;
+    $('.ui.accordion')
+        .accordion()
+    ;
+</script>
+</html>

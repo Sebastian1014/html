@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script language="javascript" src="daxie/jquery/jquery.js"></script>-->
+    <link href="dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="daxie/css/style.css" type="text/css" rel="stylesheet">
+    <link href="daxie/css/base.css" type="text/css" rel="stylesheet">
+    <!--<link href="daxie/css/idangerous.swiper.css" type="text/css" rel="stylesheet">-->
+    <!--<link href="daxie/css/index-media.css" type="text/css" rel="stylesheet">-->
+    <!--<link href="daxie/css/barrierfree.css" type="text/css" rel="stylesheet">-->
+    <!--<link href="daxie/myanimate.min.css" type="text/css" rel="stylesheet">-->
+</head>
+<body id="body1">
+<div class="header p-r">
+    <!--part Top-->
+    <div class='header-top container p-r'>
+        <div class='row pt-10'>
+            <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 plr-0'>
+                <a href='http://jyh.daxie.gov.cn/' class='header-logo d-b p-r'>
+                    <img src='image/logo.jpg' alt='宁波大榭开发区' class='w'/>
+                </a>
+            </div>
+            <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 plr-0 p-r'>
+                <p class='header-right-top hidden-sm hidden-xs f-13 color-c2 t-r'>
+                    <a href='#' onclick='kqNav()'>无障碍浏览</a><span>/</span>
+                    <a href='http://jyh.daxie.gov.cn/en/' target='_blank'>English</a><span>/</span>
+                    <a href='http://jyh.daxie.gov.cn/jp/ ' target='_blank '>日本语</a><span>/</span>
+                    <a href='http://www.daxie.gov.cn/gtb/index.jsp?url=http://www.daxie.gov.cn' target='_blank'>繁体中文</a><span>/</span>
+                    <a href='http://www.daxie.gov.cn/'>简体中文</a><span>/</span>
+                    <a href='http://www.zjzwfw.gov.cn/zjzw/zj/zw_pc_download/?webId=1' target='_blank'
+                       style='position: relative;' class='GAScode'>浙江政务服务APP</a>
+                </p>
+                <div style='position: absolute; top: 18px; right: 0px; height: 115px; width: 115px; z-index: 999; display: none;'
+                     class='GAScodePic'>
+                    <img src='/picture/0/1711241501110997325.png' alt='浙江政务服务APP二维码' style='height: 100%;width: 100%;'>
+                </div>
+                <form name='userform' action='http://gtog.ningbo.gov.cn/jrobot/search.do' onsubmit='return dxsearch();'
+                      target='_blank ' method='get '>
+                    <div class='header-right-search f-16 color-3 clearfix'>
+                        <div class='header-search bgcolor-e f-l p-r clearfix '>
+                            <div class='search-key p-a '>
+                                <!--备注，选择搜索类目见下方-->
+                                <span id='searchtype '>站群</span>
+                                <div class='search-item p-a zindex-3 '>
+                                    <ul class='w '>
+                                        <li>站群</li>
+                                        <li>站内</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type='text ' placeholder='请输入关键字检索 ' id='searchcontent '
+                                   class='search-input w color-3 '/>
+                            <a href='javascript:;' onclick='dxsearch()' target='_blank'
+                               class='search-btn scaleBox d-b bgcolor-black t-c p-a'><img
+                                    src='/picture/0/1709301459375178946.png' alt='search' class='d-ib'/></a>
+                        </div>
+                        <a href='http://nb.zjzwfw.gov.cn/' target='_blank'
+                           class='header-link1 ml-15 hidden-sm hidden-xs scaleBox2 f-l'><img
+                                src='image/www.zjzwwf.gov.cn.png' alt='浙江政务服务网' class='d-b w'/></a>
+                        <a href='http://www.ningbo.gov.cn/' target='_blank'
+                           class='header-link2 hidden-sm hidden-xs scaleBox2 f-r'><img
+                                src='image/www.ningbo.gov.cn.png' alt='中国宁波' class='d-b w'/></a>
+                        <!--以下两个图标移动端才可见-->
+                        <a href='javascript:void(0)' class='header-nav-control visible-sm visible-xs f-r'><img
+                                src='/picture/0/1709301502191685653.png' alt='' class='w'/></a>
+                        <a href='javascript:void(0)' class='header-search-control visible-sm visible-xs f-r'><img
+                                src='/picture/0/1709301503021622795.png' alt='' class='w'/></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class='blank-h70 hidden-xs hidden-sm'></div>
+    <!--part Nav-->
+    <div class='header-nav bgcolor-orange p-a w'>
+        <div class='container'>
+            <div class='row'>
+                <ul class='nav-list f-18 p-r clearfix'>
+                    <li class='nav-list-item' id='forum_0'>
+                        <a href='/index.html' class='d-b'>首页</a>
+                    </li>
+                    <li class='nav-list-item' id='forum_85236'>
+                        <a href='/col/col85236/index.html' class='d-b'>走进大榭</a>
+                        <div class='subNav m-scaleIn p-a hidden-sm hidden-xs f-14 clearfix' style='display: none;'>
+                            <div class='nav1-left nav1-spe f-l f-14'>
+                                <ul class='w clearfix'>
+                                    <li><a href='/col/col85375/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>大榭荣誉</a></li>
+                                    <li><a href='/col/col85362/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>开发背景</a></li>
+                                    <li><a href='/col/col85363/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>产业发展</a></li>
+                                    <li><a href='/col/col85364/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>媒体聚焦</a></li>
+                                    <li><a href='/col/col85365/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>发展规划</a></li>
+                                    <li><a href='http://jyh.daxie.gov.cn/cn/assets/2017/daxiezz/index.html'
+                                           target='_blank'><img src='/picture/0/1710101643357787557.png' alt=''>印象大榭</a>
+                                    </li>
+                                    <li><a href='/col/col85355/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>鲜明优势</a></li>
+                                    <li><a href='/col/col85356/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>投资环境</a></li>
+                                    <li><a href='/col/col85357/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>人文环境</a></li>
+                                    <li><a href='/col/col85358/index.html'><img src='/picture/0/1710101643357787557.png'
+                                                                                alt=''>生态环境</a></li>
+                                </ul>
+                            </div>
+                            <div class='nav1-right t-l f-r'>
+                                <a href='/col/col85361/index.html'><h1 class='f-18 color-b'>大榭概况</h1></a>
+                                <div class='nav1-right-part mt-10 clearfix'>
+                                    <a href='/col/col85361/index.html' class='d-b f-l'>
+                                        <img src='/picture/0/1710101641305228849.jpg' alt='' class='w p-a'>
+                                    </a>
+                                    <div class='f-r f-13 color-7'>
+                                        <p class='ti-2'>
+                                            东海之滨，洋洋大港…站在改革开放浪潮的前沿，昔日偏处一隅的海岛渔乡，已华丽蜕变为东一颗令世人瞩目的'海上明珠'。这就是国家级经济技术开发区——宁波大榭开发区。</p>
+                                        <p class='ti-2'>
+                                            1992年，借小平同志“南巡讲话”之东风，时任全国人大常委会副委员长、中信公司董事长荣毅仁先生两度视察宁波，提出整体开发大榭岛的战略设想。</p>
+                                        <p class='ti-2'> 开发建设20多年来，中共中央总书记习近平等中央领导，以及省、市领导先后莅临大榭视察...<a
+                                                href='/col/col85361/index.html' class='color-b pl-10'>了解更多&gt;&gt;</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='nav-list-item' id='forum_85226'>
+                        <a href='/col/col85226/index.html' class='d-b'>政务公开</a>
+                        <div class='subNav m-scaleIn p-a hidden-sm hidden-xs f-14 clearfix' style='display: none;'>
+                            <div class='nav1-left nav2-left f-l f-14'>
+                                <ul class='w clearfix'>
+
+                                    <li><a href='/col/col85241/index.html'>组织机构</a></li>
+
+                                    <li><a href='/col/col85316/index.html'>领导信息</a></li>
+
+                                    <li><a href='/col/col85243/index.html'>通知公告</a></li>
+
+                                    <li><a href='/col/col85244/index.html'>本地要闻</a></li>
+
+                                    <li><a href='/col/col85245/index.html'>政务动态</a></li>
+
+                                    <li><a href='/col/col85319/index.html'>规划计划</a></li>
+
+                                    <li><a href='/col/col85321/index.html'>财政信息</a></li>
+
+                                    <li><a href='/col/col85327/index.html'>采购招标</a></li>
+
+                                    <li><a href='/col/col85252/index.html'>土地和产权交易</a></li>
+
+                                    <li><a href='/col/col85335/index.html'>小型工程</a></li>
+
+                                    <li><a href='/col/col85337/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>项目建设</a></li>
+
+                                    <li><a href='/col/col85340/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>人事信息</a></li>
+
+
+                                    <li><a href='/col/col85253/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>统计数据</a></li>
+
+                                    <li><a href='http://jyh.daxie.gov.cn/yj/cn' target='_blank'><img
+                                            src='/images/5056/icon-arrow-right.png' alt=''>应急管理</a></li>
+
+                                    <li><a href='/col/col85347/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>监督检查</a></li>
+
+                                    <li><a href='/col/col85256/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>征地拆迁</a></li>
+
+                                    <li><a href='/col/col85257/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>保障性住房</a></li>
+
+                                    <li><a href='/col/col85258/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>社会救助</a></li>
+
+                                    <li><a href='/col/col85259/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>城乡管理</a></li>
+
+                                    <li><a href='/col/col85260/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>专题专栏</a></li>
+
+                                </ul>
+                            </div>
+                            <div class='nav1-right nav2-right t-l f-r'>
+                                <h1 class='f-18 color-b'>通知公告</h1>
+                                <div class='nav2-right-part mt-10 p-r clearfix'>
+                                    <iframe src='/col/col86461/index.html' frameborder='0' border='0'
+                                            style='width: 447px;height: 220px;overflow: hidden;border-style: none;'
+                                            scrolling='no'></iframe>
+                                    <ul class='nav2-right-other f-14 p-a'>
+                                        <li id='info-type1'><a
+                                                href='http://xxgk.daxie.gov.cn/gkml.aspx?DeptStreetID=4&gkzd=type'
+                                                target='_blank' class='color-3'>公开规定</a></li>
+                                        <li id='info-type2'><a href='http://xxgk.daxie.gov.cn/gkzn.aspx' target='_blank'
+                                                               class='color-3'>公开指南</a></li>
+                                        <li id='info-type3'><a
+                                                href='http://xxgk.daxie.gov.cn/gkml.aspx?DeptStreetID=4&NodeCode=10001&zzjg=type'
+                                                target='_blank' class='color-3'>公开目录</a></li>
+                                        <li id='info-type4'><a href='http://xxgk.daxie.gov.cn/gknb.aspx' target='_blank'
+                                                               class='color-3'>公开年报</a></li>
+                                        <li id='info-type5'><a href='http://xxgk.daxie.gov.cn/ysqgk.aspx'
+                                                               target='_blank' class='color-3'>依申请公开</a></li>
+                                        <li id='info-type6'><a href='http://xxgk.daxie.gov.cn/yjx.aspx' target='_blank'
+                                                               class='color-3'>意见箱</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='nav-list-item' id='forum_85237'>
+                        <a href='http://nbdxkfq.zjzwfw.gov.cn/' target='_blank' class='d-b'>办事服务</a>
+                        <div class='subNav subNav3 m-scaleIn p-a hidden-sm hidden-xs f-14 clearfix'>
+                            <div class='nav3-left f-work-service t-l p-a'>
+                                <h1 class='f-18 color-b pb-10'>办事服务</h1>
+                                <ul class='f-work-item1 m-c t-c clearfix'>
+                                    <li id='service1'>
+                                        <a href='http://www.zjzwfw.gov.cn/zjzw/item/list/gr_index.do?webId=107&amp;tabid=44740'
+                                           target='_blank' class='color-7'><span></span>个人办事</a>
+                                    </li>
+                                    <li id='service2'>
+                                        <a href='http://www.zjzwfw.gov.cn/zjzw/item/list/fr_index.do?webId=107&amp;tabid=44869'
+                                           target='_blank' class='color-7'><span></span>法人办事</a>
+                                    </li>
+                                    <li id='service3'>
+                                        <a href='http://www.zjzwfw.gov.cn/zjzw/item/list/sp_index.do?webId=107&amp;tabid=44998'
+                                           target='_blank' class='color-7'><span></span>行政审批</a>
+                                    </li>
+                                    <li id='service4'>
+                                        <a href='http://nbdxkfq.zjzwfw.gov.cn/col/col50963/index.html' target='_blank'
+                                           class='color-7'><span></span>便民服务</a>
+                                    </li>
+                                    <li id='service5'>
+                                        <a href='http://nbdxkfq.zjzwfw.gov.cn/col/col51338/index.html?tabid=45256'
+                                           target='_blank' class='color-7'><span></span>阳光政务</a>
+                                    </li>
+                                    <li id='service6'>
+                                        <a href='http://zjpubservice.zjzwfw.gov.cn/index.html?citycode=330233'
+                                           target='_blank' class='color-7'><span></span>公共资源交易</a>
+                                    </li>
+                                </ul>
+                                <ul class='f-work-item2 m-c mt-25 t-c color-7 clearfix'>
+                                    <li id='service7'>
+                                        <p><a href='http://www.zjzwfw.gov.cn/jrobot/robot/index.do?webId=107'
+                                              target='_blank' class='color-7'>智能问答</a><span>|</span><a
+                                                href='http://zxts.zjzwfw.gov.cn/wsdt.do?method=lettselect&areacode=330230'
+                                                target='_blank' class='color-7'>我要咨询</a></p>
+                                        <p><a href='javascript:;' onclick='callpopupClick()'
+                                              class='color-7'>政务热线</a><span>|</span><a href='/col/col85401/index.html'
+                                                                                       target='_blank' class='color-7'>常见问题</a>
+                                        </p>
+                                    </li>
+                                    <li id='service8'>
+                                        <p><a href='http://www.zjzwfw.gov.cn/zjzw/item/list/fr_index.do?webId=107'
+                                              target='_blank' class='color-7'>办事指南</a><span>|</span><a
+                                                href='http://www.zjzwfw.gov.cn/zjzw/search/progress/query.do?webId=107'
+                                                target='_blank' class='color-7'>办事进度</a></p>
+                                        <p>
+                                            <a href='http://xyxx.zjzwfw.gov.cn/zjcreditzwfw/html/enterpriseCreditTips.jsp'
+                                               target='_blank' class='color-7'>信用信息</a><span>|</span><a
+                                                href='http://www.zjzwfw.gov.cn/module/map/mapservice.jsp?webId=107'
+                                                target='_blank' class='color-7'>地图服务</a></p>
+                                    </li>
+                                    <li id='service9'>
+                                        <p><a href='http://nbdxkfq.zjzwfw.gov.cn/col/col55006/index.html'
+                                              target='_blank' class='color-7'>权力清单</a><span>|</span><a
+                                                href='http://www.zjzwfw.gov.cn/zjzw/see/notice/list.do?webId=107'
+                                                target='_blank' class='color-7'>办件公告</a></p>
+                                        <p>
+                                            <a href='http://www.zjzwfw.gov.cn/zjzw/punish/frontpunish/showadmins.do?webId=107&amp;tabid=18939'
+                                               target='_blank' class='color-7'>行政处罚</a><span>|</span><a
+                                                href='http://www.zjzwfw.gov.cn/col/col52705/index.html?webId=107'
+                                                target='_blank' class='color-7'>绩效考评</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='nav3-middle nav3-iframe'>
+                                <iframe src='http://jyh.daxie.gov.cn/zt/NewsBjgs_Frame.aspx' border='0' frameborder='0'
+                                        class='w h bgcolor-f7 '></iframe>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='nav-list-item' id='forum_85238'>
+                        <a href='/col/col85238/index.html' class='d-b'>互动交流</a>
+                        <div class='subNav m-scaleIn p-a hidden-sm hidden-xs f-14 clearfix' style='display: none;'>
+                            <div class='nav4-left director-mailbox t-l f-l'>
+                                <div class='nav4-rightPart1'>
+                                    <ul class='p-r clearfix' role='tablist'>
+                                        <li role='presentation' class='f-l mr-20 active'>
+                                            <a href='#news-poll' aria-controls='news-poll' role='tab' data-toggle='tab'
+                                               data-event='mouseenter' data-index='0' class='d-b'>
+                                                <h1 class='f-18 color-9'>民意征集</h1>
+                                            </a>
+                                        </li>
+                                        <li role='presentation mr-20' class='f-l mr-20'>
+                                            <a href='#news-survey' aria-controls='news-survey' role='tab'
+                                               data-toggle='tab' data-event='mouseenter' data-index='1' class='d-b'>
+                                                <h1 class='f-18 color-9'>网上调查</h1>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class='tab-content'>
+                                        <ul role='tabpanel' id='news-poll'
+                                            class='tab-pane in active index-other-list index-inform-list index-news-list clearfix'>
+                                        </ul>
+                                        <ul role='tabpanel' id='news-survey'
+                                            class='tab-pane in index-other-list index-inform-list index-news-list clearfix'>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='comm-button-group color-b'>
+                                    <span>主任信箱</span>
+                                    <a class='sign1 transition'
+                                       href='http://zxts.zjzwfw.gov.cn/wsdt.do?method=lettselect&areacode=330230'
+                                       target='_blank'><img src='/images/5056/director-mailbox-link-icon01.png' alt=''>我要写信</a>
+                                    <a class='sign2 transition' href='http://zxts.zjzwfw.gov.cn/wsdt.do?method=query'
+                                       target='_blank'><img src='/images/5056/director-mailbox-link-icon02.png' alt=''>信件查询</a>
+                                    <a class='sign3 transition' href='/col/col85572/index.html'><img
+                                            src='/images/5056/director-mailbox-link-icon03.png' alt=''>使用帮助</a>
+                                </div>
+                            </div>
+                            <div class='nav4-right t-l p-r f-r h'>
+                                <div class='nav4-rightPart2'>
+                                    <h1 class='f-18 color-b'>常见问题</h1>
+                                    <iframe src='/col/col86462/index.html' frameborder='0' borer='0'
+                                            style='width: 402px;height: 210px;overflow: hidden;border-style: none;'
+                                            scrolling='no'></iframe>
+                                </div>
+                                <a href='http://jyh.daxie.gov.cn/cn/zxft.html'
+                                   class='nav4-online interact-mail color-f o-h scaleBox'>
+                                    <img src='/images/5056/nav-part4-img4.JPG' alt='' class='w h d-b transition'>
+                                    <p>在线访谈</p>
+                                </a>
+                                <a href='/col/col85575/index.html' class='nav4-news interact-mail color-f o-h scaleBox'>
+                                    <img src='/images/5056/nav-part4-img5.jpg' alt='' class='w h d-b transition'>
+                                    <p>新闻发布</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='nav-list-item' id='forum_85412'>
+                        <a href='/col/col85412/index.html' class='d-b'>政策法规</a>
+                        <div class='subNav m-scaleIn p-a hidden-sm hidden-xs f-14 clearfix'>
+                            <div class='nav1-left nav5-left f-l'>
+                                <ul class='w clearfix'>
+                                    <li><a href='/col/col85412/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>法规文件</a></li>
+                                    <li><a href='/col/col85445/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>政策咨询</a></li>
+                                    <li><a href='/col/col85433/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>政策解读</a></li>
+                                </ul>
+                            </div>
+                            <div class='nav5-middle f-l t-l'>
+                                <h1 class='f-18 color-b'>政策咨询</h1>
+                                <div class='nav5-middle-content mt-10'>
+                                    <iframe src='/col/col86463/index.html' frameborder='0' border='0'
+                                            style='width: 430px;height: 220px;overflow: hidden;border-style: none;margin-top:-25px'
+                                            scrolling='no'></iframe>
+                                </div>
+                            </div>
+                            <div class='nav5-right t-l f-r'>
+                                <h1 class='f-18 color-b'>政府文件</h1>
+                                <ul>
+                                    <li><a href='/col/col85414/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>办公室</a></li>
+                                    <li><a href='/col/col85415/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>社会发展保障局</a></li>
+                                    <li><a href='/col/col85416/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>经发局</a></li>
+                                    <li><a href='/col/col85417/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>规划建设局（城管局）</a></li>
+                                    <li><a href='/col/col85418/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>国税局</a></li>
+                                    <li><a href='/col/col85419/index.html'><img src='/images/5056/icon-arrow-right.png'
+                                                                                alt=''>行政服务中心（公共资源交易中心）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <!--endunit -->
+                    <li class='nav-list-item nav-list-last' id='forum_85233'>
+                        <a href='/col/col85233/index.html' class='d-b'>站群导航</a>
+                        <div class='subNav nav6-subNav m-scaleIn p-a hidden-sm hidden-xs f-14 clearfix'>
+                            <div class='nav6-left t-l'>
+                                <ul class='w clearfix'>
+                                    <li><a href='/col/col85921/index.html' target='_blank'><img
+                                            src='/images/5056/icon-arrow-right.png' alt=''>人事局</a></li>
+                                    <li><a href='/col/col85922/index.html' target='_blank'><img
+                                            src='/images/5056/icon-arrow-right.png' alt=''>经发局</a></li>
+                                    <li><a href='/col/col85923/index.html' target='_blank'><img
+                                            src='/images/5056/icon-arrow-right.png' alt=''>交通局</a></li>
+                                    <li><a href='/col/col85925/index.html' target='_blank'><img
+                                            src='/images/5056/icon-arrow-right.png' alt=''>安全环保局</a></li>
+                                    <li><a href='/col/col85924/index.html' target='_blank'><img
+                                            src='/images/5056/icon-arrow-right.png' alt=''>公安分局</a></li>
+                                    <li><a href='/col/col85926/index.html' target='_blank'><img
+                                            src='/images/5056/icon-arrow-right.png' alt=''>国土分局</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!--endunit -->
+                    <li id='headchunk' class='nav-chunk p-a visible' style='left: 0px;'></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<script type='text/javascript' src='/images/5056/wza.js'></script>-->
+
+    <!--空白栏-->
+    <!--<script src="daxie/js/1710200931445492.js"></script>-->
+</div>
+
+
+</body>
+</html>

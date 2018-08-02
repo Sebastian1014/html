@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试</title>
+    <script src="bengary/jquery/jquery.js"></script>
+</head>
+<body>
+<div class="nav" style="margin: 100px auto; width:960px;background: #0c92d1;">
+    <a class="active" href="#">首页</a>
+    <a href="#">产品</a>
+    <a href="#">新闻中心</a>
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">首页</a>
+    <a href="#">首页</a>
+    <div class="line"></div>
+</div>
+<style>
+    .nav{
+        position:relative;
+    }
+    .nav a{
+        padding:10px 20px;
+        /*border-bottom:solid 3px #fff;*/
+        text-decoration: none;
+        color:#666;
+    }
+    .nav a:hover{
+        color:#f33;
+    }
+    .nav .active, .nav .active:hover{
+        color:#f33;
+    }
+    .nav .line{
+        position:absolute;
+        height: 20px;
+        width: 72px;
+        background: white;
+        left:0;
+        top:0px;
+    }
+</style>
+<script>
+    function navLine(o, bo)
+    {
+
+        var x = '' + (o.position().top + o.outerHeight() - 2) + 'px';
+
+        var y = '' + o.position().left + 'px';
+        var w = '' + o.outerWidth() + 'px';
+        // alert(x+y+w);
+        var h = '20px';
+        $('.nav .line').stop();
+        if (bo)
+        {
+            $('.nav .line').css({width:w, height:h, top:0, left:y});
+        }
+        else
+        {
+            $('.nav .line').animate({width:w, height:h, top:0, left:y});
+        }
+    }
+    $(function(){
+        navLine($('.nav .active'), true);
+        $('.nav a').hover(function(){
+            navLine($(this));
+        }, function(){
+            navLine($('.nav .active'));
+        });
+    });
+</script>
+</body>
+</html>

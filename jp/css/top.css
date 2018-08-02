@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/**
+ * トップページ
+ */
+.clearfix {
+  #zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ==========================================================================
+   layout.css 上書き
+   ========================================================================== */
+#contents {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#bnr-area #bnr-list .bnr-small,
+#bnr-area #bnr-list .bnr-small:nth-child(3n) {
+  margin-right: 14px;
+}
+
+#fblike-box {
+  border-top: 1px solid #ddd;
+}
+
+
+/* ==========================================================================
+   メインイメージエリア
+   ========================================================================== */
+#main-image {
+  text-align: center;
+  position: relative;
+}
+#main-image .main-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 497px;
+}
+#main-image .main-wrap .anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main-image .main-wrap .anime:hover {
+  /*background: url(img/os0_on.gif) no-repeat;*/
+}
+#main-image .main-wrap .onestop {
+  position: absolute;
+  bottom: 0;
+  right: 21px;
+  width: 248px;
+  height: 193px;
+  z-index: 100;
+}
+#main-image .main-wrap .onestop .anime {
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 248px;
+  height: 193px;
+}
+#main-image .main-wrap .onestop a {
+  /*				top: 0;
+  				left: 0;
+  				display: block;
+  				width: 248px;
+  				height: 193px;
+  				z-index:100;*/
+}
+
+/* ==========================================================================
+   提案事例
+   ========================================================================== */
+#case-wrap {
+  margin-top: 64px;
+  /* 引き出しアニメーション要素のラッパー */
+}
+#case-wrap h2 {
+  margin-bottom: 52px;
+}
+#case-wrap .case-box {
+  float: left;
+  margin-right: 97px;
+  width: 255px;
+  height: 560px;
+  position: relative;
+}
+#case-wrap .case-box h3 {
+  margin-bottom: 20px;
+}
+#case-wrap .case-box p {
+  line-height: 1.67 !important;
+}
+#case-wrap .case-box:last-child {
+  margin-right: 0;
+}
+#case-wrap .case-thumb {
+  display: block;
+  margin-bottom: 15px;
+}
+#case-wrap .case-list {
+  margin-top: 15px;
+  /*height: 343px;*/
+  height: 414px;
+  position: relative;
+}
+#case-wrap .case-list li {
+  line-height: 1.25;
+  margin-bottom: 30px;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+#case-wrap .case-list a {
+  color: #000;
+  /*&:hover{
+  	background-color:#fff200;
+  }*/
+}
+#case-wrap .case-listA {
+  background: url(img/cese_bg_a.jpg) no-repeat;
+}
+#case-wrap .case-listB {
+  background: url(img/cese_bg_b.jpg) no-repeat;
+}
+#case-wrap .case-listC {
+  background: url(img/cese_bg_c.jpg) no-repeat;
+}
+#case-wrap .drawer {
+  width: 352px;
+  height: 81px;
+  position: absolute;
+  /*top: 468px;*/
+  top: 600px;
+  left: -48px;
+  z-index: 5;
+  /* 一覧を見るボタンのラッパー */
+}
+#case-wrap .drawer p {
+  position: relative;
+  left: 49px;
+  width: 255px;
+}
+
+/* ==========================================================================
+   メイン下部コンテンツ
+   ========================================================================== */
+#main-bottom {
+  margin-top: 140px;
+}
+
+#bnr-list {
+  margin-right: -20px;
+  overflow: hidden;
+  width: 490px;
+}
+#bnr-list li {
+  margin-right: 20px;
+  margin-top: 25px;
+}
+#bnr-list li:first-child {
+  margin-top: 0;
+}
+#bnr-list .bnr-small {
+  margin-top: 20px;
+}
+
+/* NEWS
+   ========================================================================== */
+#news-area {
+  position: relative;
+  margin-top: -18px;
+}
+#news-area h2 {
+	font-size:18px;
+}
+#news-area h2 span {
+	color:  #009de1;
+}
+
+#news-area #news-txtlist {
+  position: absolute;
+  top: 0;
+  left: 124px;
+}
+#news-area a {
+  color: #000;
+  font-weight: bold;
+}
+#news-area a:visited {
+  color: #000;
+}
+#news-area a:hover {
+  text-decoration: none;
+}
+#news-area #news-list {
+      width: 445px;
+    height: 236px;
+    margin: 15px 0 0px 0;
+}
+#news-area #news-list dt {
+	float: left;
+	clear: left;
+	width: 90px;
+}
+#news-area #news-list dd {
+  	line-height: 1.5;
+  	margin: 10px 0 15px 90px;
+	width: 355px;
+}
+#news-area #news-list dd:first-child {
+ 	 margin-top: 0;
+}
+
+#news-area .no-article {
+	margin: 50px 0;
+	text-align:center;
+}
